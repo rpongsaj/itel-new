@@ -1,0 +1,40 @@
+.container {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 30%;
+  font-weight: 300;
+  color: #666;
+}
+
+.page-title {
+  color: #fff;
+  background: #42c1b5;
+  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 { font-size: 42px; margin-top: 10px; }
+
+h2 {
+  color: #fff;
+  background: #42c1b5;
+  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 30%;
+  padding: 10px;
+}
+
+h3 {
+  color: #42c1b5;
+  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0;
+}
+
+.page-title { margin-bottom: 15px; }
