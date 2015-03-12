@@ -12,7 +12,7 @@ body {
 
 p {
   font-size: 1em;
-  line-height: 30px;
+  line-height: 2em;
   padding-left: 30%;
   font-weight: 300;
   color: #666;
@@ -22,16 +22,16 @@ p:last-child {
   margin-bottom: 40px;
 }
 
+h1, h2, h3, h4, h5, h6 { font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .page-title {
   color: #fff;
   background: #42c1b5;
-  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 { font-size: 2em; margin-top: 10px; }
 
 h1#site-title {
-  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 3em;
   font-weight: 600;
@@ -62,7 +62,6 @@ h1#site-title a:hover { border: 0; text-decoration: none; }
 h2 {
   color: #fff;
   background: #42c1b5;
-  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.75em;
@@ -73,10 +72,28 @@ h2 {
 
 h3 {
   color: #42c1b5;
-  font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 0;
 }
+
+h4 { text-transform: uppercase; font-size: 1.6em; margin: 20px 0; }
+h4 a { color: #666; }
 
 .page-title { margin-bottom: 15px; }
 
 .video-container { margin-right: 15px; }
+
+
+.gallery-cell {
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+section#explainer { background: #0071a1; padding: 30px 0; }
+section#explainer a { color: #6cbbdd; }
+
+h1.exp { color: #fff; font-size: 4em; text-transform: uppercase; }
+
+section#explainer p { padding-left: 0; color: #fff; font-size: 2em; margin-top: 20px; }
+
+ol.flickity-page-dots { display: none; }

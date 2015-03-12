@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" />
 
     <script type="text/javascript" src="//use.typekit.net/fbk8lui.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -19,15 +20,44 @@
     <div class="row">
       <div class="col-md-12">
 
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell">
+            <a href="article-open.html"><img src="img/sigman.jpg" alt="" /></a>
+          </div>
 
+          <div class="gallery-cell">
+            <img src="img/elmendorf.jpg" alt="" />
+          </div>
+
+          <div class="gallery-cell">
+            <a href="article-cohort.html"><img src="img/harbert.jpg" alt="" /></a>
+          </div>
+
+        </div><!-- /.gallery -->
+
+        <h4><a href="#">View all projects &#65515;</a></h4>
 
       </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container -->
 
+  <section id="explainer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="exp">What is ITEL?</h1>
+        </div><!-- /.col -->
+        <div class="col-md-8">
+          <p class="lead">The ITEL Initiative is designed to strengthen teaching and learning in on-campus programs and enhance Georgetown's online activity globally through new approaches to interactive learning.</p>
+          <h4><a href="#">Learn more</a></h4>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>    
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+
   <script>
     $('a').click(function(e) {
       $('.video-container').html('<iframe src="https://player.vimeo.com/video/121920474?autoplay=1" width="470" height="264" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
