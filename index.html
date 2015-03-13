@@ -12,13 +12,15 @@
 
   <body>
 
+<div class="circuit">
+
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <a href="https://cndls.georgetown.edu/"><img src="img/logo.png" alt="CNDLS" /></a>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <a href="http://www.georgetown.edu/"><img src="img/gtlogo.png" class="pull-right" id="georgetown-logo" alt="Georgetown University" /></a>
         </div>
       </div><!-- /.row -->
@@ -27,41 +29,83 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-7">
+
+      <div class="col-sm-6">
         <h1 class="padded-multiline" id="site-title"><span>Initiative on<br />Technology-Enhanced<br />Learning</span></h1>
-      </div>
-    </div>
+      </div><!-- /.col-sm-6 -->
+
+      <div class="col-sm-6 itel-nav">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#">About</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">COHORT</a></li>
+                  <li><a href="#">OPEN TRACK</a></li>
+                  <li><a href="#">CURRICULAR EXPERIMENTATION</a></li>
+                </ul>
+          </li>
+          <li><a href="#">Apply</a></li>
+        </ul>
+      </div><!-- /.col -->
+
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+
     <div class="row">
-      <div class="col-md-12">
+      <!-- <div class="col-sm-12"> -->
 
-        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 5000 }'>
+
           <div class="gallery-cell">
-            <a href="article-open.html"><img src="img/sigman.jpg" alt="" /></a>
+            <a href="article-open.html">
+            <img src="img/sigman.jpg" alt="" />
+            <div class="color orange">
+              <h5>INTEGRATING REAL-TIME BIG DATA ANALYSIS AND VISUALIZATION FOR BETTER DECISION-MAKING</h5>
+              <h5>Betsy Sigman, Business</h5>
+            </div>
+            </a>
           </div>
 
           <div class="gallery-cell">
-            <img src="img/elmendorf.jpg" alt="" />
+              <img src="img/elmendorf.jpg" alt="" />
+              <div class="color green">              
+                <h5>COLLABORATIVE INQUIRY AND THE USE OF DIGITALLY-EQUIPPED MICROSCOPES IN A BIOLOGY LABORATORY CURRICULUM</h5>
+                <h5>Heidi Elmendorf, Biology</h5>
+              </div>
           </div>
 
           <div class="gallery-cell">
-            <a href="article-cohort.html"><img src="img/harbert.jpg" alt="" /></a>
+            <a href="article-cohort.html">
+            <img src="img/harbert.jpg" alt="" />
+            <div class="color teal">
+              <h5>INTERACTIVELY VISUALIZING MUSIC: ANIMATING PEDAGOGY THROUGH CUSTOM MULTIMEDIA SOFTWARE</h5>
+              <h5>Ben Harbert, Performing Arts</h5>
+            </div>
+            </a>
           </div>
 
         </div><!-- /.gallery -->
 
-        <h4><a href="#">View all projects &#65515;</a></h4>
-
-      </div><!-- /.col -->
+      <!-- </div> /.col -->
     </div><!-- /.row -->
-  </div><!-- /.container -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4><a href="#">View all projects &#65515;</a></h4>
+      </div>
+    </div>
+  </div>
 
   <section id="explainer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <h1 class="exp">What is ITEL?</h1>
         </div><!-- /.col -->
-        <div class="col-md-8">
+        <div class="col-sm-8">
           <p class="lead">The ITEL Initiative is designed to strengthen teaching and learning in on-campus programs and enhance Georgetown's online activity globally through new approaches to interactive learning.</p>
           <h4><a href="#">Learn more</a></h4>
       </div><!-- /.row -->
@@ -71,7 +115,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-4">
           <ul class="list-unstyled" id="address">
             <li>CNDLS</li>
             <li>3520 Prospect St. NW #314</li>
@@ -88,11 +132,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
   <script>
     $('a').click(function(e) {
       $('.video-container').html('<iframe src="https://player.vimeo.com/video/121920474?autoplay=1" width="470" height="264" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
     });
   </script>
+
+  </div><!-- /.circuit -->
   </body>
 </html>

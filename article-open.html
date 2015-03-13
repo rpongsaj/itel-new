@@ -10,6 +10,8 @@
 
   <body>
 
+<div class="circuit">
+
   <header>
     <div class="container">
       <div class="row">
@@ -25,16 +27,25 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h1 id="site-title" class="padded-multiline"><span><a href="./">ITEL</a></span></h1>
+      <div class="col-md-7">
+        <h3 id="site-title" class="padded-multiline"><span><a href="./">INITIATIVE ON TECHNOLOGY-ENHANCED LEARNING</a></span></h3>
       </div><!-- /.col -->
-      <div class="col-md-6 itel-nav">
+
+      <div class="col-sm-5 itel-nav">
         <ul class="nav nav-pills pull-right">
           <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">COHORT</a></li>
+                  <li><a href="#">OPEN TRACK</a></li>
+                  <li><a href="#">CURRICULAR EXPERIMENTATION</a></li>
+                </ul>
+          </li>
           <li><a href="#">Apply</a></li>
         </ul>
       </div><!-- /.col -->
+
     </div><!-- /.row -->
   </div><!-- /.container -->
 
@@ -51,9 +62,13 @@
     </div><!-- /.row -->
   </div><!-- /.container -->
 
-  <div class="container article">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+  <div class="article">
     <div class="row">
-      <div class="col-md-12 page-title">
+      <div class="col-md-12 page-title orange">
         <h1>Integrating Real-time Big Data Analysis and Visualization for Better Decision-making</h1>
       </div>
     </div>
@@ -61,18 +76,38 @@
       <div class="col-md-12">
 
           <div class="video-container pull-left">
-            <a href="#"><img src="img/sigman.jpg" /></a>
+            <a href="#"><img src="img/sigman-play.jpg" /></a>
           </div>
 
-          <h3>Betsy Sigman &middot; Open Track (2014)</h3>
+          <h3 class="orange-type">Betsy Sigman &middot; Open Track (2014)</h3>
 
           <p>The phrase "Big Data" is everywhere, but few have a deep understanding of what it is and how it can be used for better decision making. This project will develop and test curricula that will teach students what the term "Big Data" means in today's business world, what sources of Big Data are available and necessary for management and business decision-making, and how to use real-time data to make better organizational decisions. Data will be collected from the publicly available Twitter 1% sample using the Splunk software package. Students will also learn to use Splunk for text analysis, sentiment analysis, and other types of social media analysis. Additionally, they will learn to use the Tableau software package to create data visualizations to help understand, analyze, and present data. Our hypothesis is that hands-on experience with analyzing and visualizing live data streams will help students to understand how organizations can make better decisions using such data. This will be tested through pre- and post- tests and surveys to assess student learning and by the evaluation of projects they develop for companies or non-profits.</p>
           
-          <h2>Publications</h2>
-          <p>Teaching How to Integrate Real Time Big Data Analysis and Visualization for Better Decision Making. Betsy Page Sigman (Georgetown University), Marie Selvanadin (Georgetown University), William Garr (Georgetown
-University), Robert Pongsajapan (Georgetown University), Kristin Bolling (Georgetown University)</p>
+          <h2 class="orange-type">Publications</h2>
+          <div class="publication">
+          <p class="orange-type"><strong>Teaching How to Integrate Real Time Big Data Analysis and Visualization for Better Decision Making</strong></p>
+          <p><em>This paper discusses how Splunk can help students analyze streaming social media data from Twitter feeds, in tandemwith Tableau, to make better decisions. Our hypothesis is that hands-on experience with analyzing and visualizing live data streams will help students to understand how organizations can make better decisions.</em></p>
+          <p class="orange-type"><em>Contributers: </em><a href="http://explore.georgetown.edu/people/bps/" target="_blank" >Betsy Page Sigman (Georgetown University),</a> <a href="https://cndls.georgetown.edu/people/mks49/" target="_blank" >Marie Selvanadin (Georgetown University),</a> <a href="https://cndls.georgetown.edu/people/wjg8/" target="_blank">William Garr (Georgetown University),</a> <a href="https://cndls.georgetown.edu/people/rap42/" target="_blank">Robert Pongsajapan (Georgetown University),</a> <a href="https://cndls.georgetown.edu/people/kab294/" target="_blank">Kristin Bolling (Georgetown University)</a></p>
+          </div>
 
-<p><em>This paper discusses how Splunk can help students analyze streaming social media data from Twitter feeds, in tandemwith Tableau, to make better decisions. Our hypothesis is that hands-on experience with analyzing and visualizing live data streams will help students to understand how organizations can make better decisions.</em></p>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+
+</div>
+</div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav>
+          <ul class="pager">
+          <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span>LAST</a></li>
+          <li class="see-all"><a href="#">SEE ALL PROJECTS</a></li>
+          <li class="next"><a href="#">NEXT<span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </nav>
       </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container -->
@@ -102,5 +137,8 @@ University), Robert Pongsajapan (Georgetown University), Kristin Bolling (George
       $('.video-container').html('<iframe src="https://player.vimeo.com/video/121920474?autoplay=1" width="470" height="264" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
     });
   </script>
+
+</div> <!-- /.circuit -->
+
   </body>
 </html>

@@ -2,20 +2,43 @@ body {
   font-size: 16px;
 }
 
-header, footer {
-  background: #666;
-  min-height: 50px;
+.circuit {
+    background-image:url('../img/bg.png');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
-header { padding-top: 10px; padding-bottom: 15px; }
-footer { padding: 50px 0; }
+header {
+  background: #4e4e4e;
+  min-height: 40px;
+}
+
+footer {
+  background-image: url('../img/gu.png');
+  background-position: 100% 20%;
+  background-repeat: no-repeat;
+  background-color: #2d2d2d;
+  color: #000;
+  padding: 20px 0px 150px 0px;
+}
+
+header { padding-top: 5px; padding-bottom: 10px; }
 
 .article {
+  background: #fff;
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 10px #ccc;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: 3px 3px 2px 0px #ccc;
+  -moz-box-shadow: 3px 3px 2px 0px #ccc;
+  box-shadow: 3px 3px 2px 0px #ccc;
+}
 
+.article ul li{
+  list-style: none;
+  padding-left: 32%;
 }
 
 p {
@@ -23,7 +46,6 @@ p {
   line-height: 2em;
   padding-left: 30%;
   font-weight: 300;
-  color: #666;
 }
 
 p:last-child {
@@ -34,29 +56,44 @@ h1, h2, h3, h4, h5, h6, #address, .breadcrumb, .itel-nav { font-family: "pill-go
 
 .page-title {
   color: #fff;
-  background: #42c1b5;
 }
 
 h1 { font-size: 2em; margin-top: 10px; }
 
 h1#site-title {
   text-transform: uppercase;
-  font-size: 3em;
-  font-weight: 600;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 3px;
-}
-
-.itel-nav {
-  padding-top: 32px;
-  font-size: 2em;
 }
 
 h1#site-title a { color: #fff; }
 h1#site-title a:hover { border: 0; text-decoration: none; }
 
+h3#site-title {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 3px;
+}
+
+h3#site-title a { color: #fff; }
+h3#site-title a:hover { border: 0; text-decoration: none; }
+
+.itel-nav {
+  padding-top: 26px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 3px;
+}
+
 .padded-multiline { 
-  line-height: 1.5em;
+  line-height: 1.75em;
   padding: 2px 0;
   width: auto;
   margin: 20px auto;
@@ -73,18 +110,14 @@ h1#site-title a:hover { border: 0; text-decoration: none; }
 }
 
 h2 {
-  color: #fff;
-  background: #42c1b5;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.75em;
   margin-top: 30px;
   margin-left: 30%;
-  padding: 10px;
 }
 
 h3 {
-  color: #42c1b5;
   margin-top: 0;
 }
 
@@ -93,13 +126,39 @@ h4 a { color: #666; }
 
 .page-title { margin-bottom: 15px; }
 
-.video-container { margin-right: 15px; }
+.video-container { margin-right: 20px; }
 
+.quote-container { 
+  margin-right: 15px;
+  width: 25%;
+  background-image: url('../img/quote.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
 
-.gallery-cell {
-  margin-right: 10px;
-  background: #8C8;
-  counter-increment: gallery-cell;
+.quote-container p:last-child {
+  margin-bottom: 0;
+}
+
+.quote {
+  font-family: "Adobe Caslon Pro", Garamond, serif;
+  font-style: italic;
+  padding-left: 0;
+  font-size: 1.75em;
+}
+
+.source {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.publication {
+  border-left: 3px solid #f2f2f2;
+  margin-left: 30%;
+}
+
+.publication p {
+  padding-left: 15px;
 }
 
 section#explainer { background: #0071a1; padding: 30px 0; }
@@ -113,7 +172,238 @@ ol.flickity-page-dots { display: none; }
 
 #georgetown-logo { margin-top: 10px; }
 
-#address { font-size: 1em; font-weight: 600; }
+#address { font-size: 1em; font-weight: 500; }
 #address a { color: #333; }
 
-.breadcrumb { padding: 0; background: none; margin: 0; text-transform: uppercase; font-size: 1.2em; }
+.breadcrumb { padding: 0; background: none; margin: 0; text-transform: uppercase; font-size: 1.2em; margin-top: 30px; }
+
+/* FLICKITY OVERWRITE */
+.flickity-viewport {
+  padding-bottom: 10px;
+}
+
+.gallery-cell {
+  margin-right: 20px;
+  background: #8C8;
+  width: 470px;
+  counter-increment: gallery-cell;
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 3px 3px 2px 0px rgba(214,214,214,1);
+  box-shadow: 3px 3px 2px 0px rgba(214,214,214,1);}
+
+.gallery-cell img:hover {
+  opacity: 1;
+}
+
+.color {
+  padding: 10px;
+  color: #fff;
+  display: block;
+  min-height: 80px;
+  max-width: 100%;
+  border-top: 3px solid #fff;
+}
+
+.color a a:hover {
+  text-decoration: none;
+}
+
+.green {
+  background-color: #93bf3e;
+}
+
+.orange {
+  background-color: #f1672e;
+}
+
+.orange-type {
+  color: #f1672e;
+}
+
+.teal {
+  background-color: #42c1b5;
+}
+
+.teal-type {
+  color: #42c1b5;
+}
+
+.gray {
+  background-color: #666;
+}
+
+/* BOOTSTRAP OVERWRITE */
+.row {
+  margin: 0;
+}
+
+.pager .see-all>a, .pager .see-all>span {
+  float: none;
+  text-align: center;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 0.45rem 1.45rem;
+}
+
+.nav-pills>li>a {
+border-radius: 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: #0071a1;
+  color: #fff;
+}
+
+
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 2px 0 0;
+font-size: 14px;
+text-align: left;
+list-style: none;
+background-color: #fff;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 1px solid #ccc;
+border: 1px solid rgba(0,0,0,.15);
+border-radius: 4px;
+-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.pager {
+  margin-bottom: 50px;
+}
+.pager li>a, .pager li>a:hover, .pager li>span {
+display: inline-block;
+padding: 5px 14px;
+background-color: #0071a1;
+color: #fff;
+font-family: "pill-gothic-300mg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+letter-spacing: 3px;
+border: 0;
+border-radius: 0;
+}
+
+/* ACCORDIAN */
+* {
+  box-sizing:border-box;
+}
+
+.accordion {
+    dl {
+        border:1px solid #ddd;
+         &:after {
+            content: "";
+            display:block;
+            height:1em;
+            width:100%;
+            background-color:darken(#38cc70, 10%);
+        }
+    }
+    dt {
+        >a {
+          text-align:center;
+          font-weight:700; 
+          padding:2em;
+          display:block;
+          text-decoration:none;
+          color:#fff;
+          transition:background-color 0.5s ease-in-out;
+        }
+      }
+    dd {
+        font-size:1em;
+        line-height:1.5em;
+        >p {
+          padding:1em 2em 1em 2em;
+        }
+    }
+}
+.accordion {
+    position:relative;
+}
+.accordian-container {
+  margin:0 auto;
+  padding:2em 0 2em 0;
+}
+.accordionTitle {
+ background-color:#38cc70; 
+  border-bottom:1px solid darken(#38cc70, 5%);
+  &:before {
+   content: "+";
+   font-size:1.5em;
+   line-height:0.5em;
+   float:left; 
+   transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color:darken(#38cc70, 10%);
+  }
+}
+.accordionTitleActive, 
+.accordionTitle.is-expanded {
+   background-color:darken(#38cc70, 10%);
+    &:before {
+     
+      transform:rotate(-225deg);
+    }
+}
+.accordionItem {
+    height:auto;
+    overflow:hidden; 
+    //SHAME: magic number to allow the accordion to animate
+    
+     max-height:50em;
+    transition:max-height 1s;   
+ 
+    
+    @media screen and (min-width:48em) {
+         max-height:15em;
+        transition:max-height 0.5s
+        
+    }
+    
+   
+}
+.accordionItemCollapsed, 
+.accordionItem.is-collapsed {
+    max-height:0;
+}
+.animateIn {
+     animation: accordionIn 0.65s normal ease-in-out both 1; 
+}
+.animateOut {
+     animation: accordionOut 0.75s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform:scale(0.8);
+  }
+  100% {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes accordionOut {
+    0% {
+       opacity: 1;
+       transform:scale(1);
+     }
+     100% {
+          opacity:0;
+          transform:scale(0.8);
+       }
+}
